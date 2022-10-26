@@ -1,0 +1,110 @@
+/* Google Font - DynaPuff */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'DynaPuff', cursive;
+}
+.background {
+	height: 100vh;
+	width: 100vw;
+	background: url('Images/PaperBackground.webp') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bird {
+	height: 100px;
+	width: 130px;
+	position: fixed;
+	top: 40vh;
+	left: 30vw;
+	z-index: 100;
+	text-shadow: 0px 4px 8px rgba(0,0,0,0.33);
+}
+
+.topleft {
+	position: absolute;
+	top: 10px;
+	right: 16px;
+  }
+
+.pipe_sprite {
+	position: fixed;
+	top: 40vh;
+	left: 100vw;
+	height: 70vh;
+	width: 6vw;
+	background:radial-gradient(rgb(113, 217, 113) 50%, rgb(4, 158, 4));
+	border: 5px solid black;
+	border-radius: 3px;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;}
+.message {
+	position: absolute;
+	z-index: 10;
+	color: black;
+	top: 30%;
+	left: 50%;
+	font-size: 4em;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.messageStyle{
+	background: white;
+	padding: 30px;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+	border-radius: 0.5rem;
+	border: 2px solid black;
+}
+.score {
+	position: fixed;
+	z-index: 10;
+	height: 10vh;
+	font-size: 7vh;
+	font-weight: 100;
+	color: rgb(0, 0, 0);
+	top: 0;
+	left: 0;
+	margin: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: 0px 4px 8px rgba(0,0,0,0.33);
+}
+.score_val {
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	text-shadow: 0px 4px 18px rgba(0,0,0,0.33);
+}
+@media only screen and (max-width: 1080px) {
+    .message{
+		font-size: 50px;
+		top: 50%;
+		white-space: nowrap;
+	}
+	.score{
+		font-size: 8vh;
+	}
+	.bird{
+		width: 120px;
+		height: 90px;
+	}
+	.pipe_sprite{
+		width: 14vw;
+	}
+}
+
+#btn_back{
+	width: 118px;
+    height: 54px;
+    font-size: 26px;
+	border-radius: 0.25rem;
+	border: 2px solid black;
+}
+
+#btn_back:hover{
+	cursor: pointer;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+	transition: 1;
+}
